@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "infinity_stew",
+  "version": "${version}",
+  "name": "Infinity Stew",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/infinity_stew/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "kr.kro.teamdodoco.infinity_stew.client.InfinityStewClient"
+    ],
+    "main": [
+      "kr.kro.teamdodoco.infinity_stew.InfinityStew"
+    ]
+  },
+  "mixins": [
+    "infinity_stew.mixins.json",
+    {
+      "config": "infinity_stew.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
