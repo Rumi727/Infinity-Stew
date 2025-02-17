@@ -11,7 +11,7 @@ public class InfinityStewItem extends Item
 {
     public InfinityStewItem()
     {
-        super(new FabricItemSettings().food(new FoodComponent.Builder().alwaysEdible().hunger(40).saturationModifier(0.25f).build()));
+        super(new FabricItemSettings().food(new FoodComponent.Builder().alwaysEdible().hunger(40).saturationModifier(0.5f).build()));
     }
 
     @Override
